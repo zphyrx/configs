@@ -1,0 +1,35 @@
+{
+  "name": "@zphyrx/typescript-config",
+  "version": "1.0.0",
+  "private": false,
+  "homepage": "https://zphyrx.com",
+  "bugs": {
+    "url": "https://github.com/zphyrx/configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zphyrx/configs.git"
+  },
+  "license": "MIT",
+  "author": "jcsilverx <jcsilverx@gmail.com>",
+  "type": "module",
+  "exports": {
+    "./dom/app": "./dom/tsconfig.app.json",
+    "./dom/library": "./dom/tsconfig.library.json",
+    "./dom/monorepo": "./dom/tsconfig.monorepo.json",
+    "./no-dom/app": "./no-dom/tsconfig.app.json",
+    "./no-dom/library": "./no-dom/tsconfig.library.json",
+    "./no-dom/monorepo": "./no-dom/tsconfig.monorepo.json"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
