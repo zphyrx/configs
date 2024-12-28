@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-internal
 
+## 1.1.1
+
+### Patch Changes
+
+- a920112: Use TypeScript’s non-null assertion (`!`) for `vitestPlugin.configs.recommended` in the `extends` field of `eslint-config-vitest` and `eslint-config-internal` to handle potential null/undefined values
+
 ## 1.1.0
 
 ### Minor Changes
