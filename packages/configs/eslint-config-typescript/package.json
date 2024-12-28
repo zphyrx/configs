@@ -34,10 +34,10 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "typescript-eslint": "^8.18.1"
+    "typescript-eslint": "^8.18.2"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.18.1",
+    "@typescript-eslint/utils": "^8.18.2",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.17.0",
