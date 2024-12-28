@@ -8,6 +8,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
     name: "@zphyrx/eslint-config-internal/typescript",
     rules: {
       "import-x/no-named-as-default-member": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
     },
   },
 ];

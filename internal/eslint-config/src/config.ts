@@ -46,7 +46,7 @@ const config: TSESLint.FlatConfig.ConfigArray = tseslint.config(
     },
   },
   {
-    extends: [vitestPlugin.configs.recommended],
+    extends: [vitestPlugin.configs!.recommended],
     name: "@zphyrx/eslint-config-internal/vitest",
     files: GLOB_TESTS,
     rules: {
