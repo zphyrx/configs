@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-vitest
 
+## 1.1.2
+
+### Patch Changes
+
+- cdda816: Remove TypeScript’s non-null assertion (`!`) for `vitestPlugin.configs.recommended` in the `extends` field
+
 ## 1.1.1
 
 ### Patch Changes
