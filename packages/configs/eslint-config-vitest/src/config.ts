@@ -5,7 +5,7 @@ import { rulesVitest } from "./rules";
 import type { TSESLint } from "@typescript-eslint/utils";
 
 const _extends: TSESLint.FlatConfig.ConfigArray = [
-  vitestPlugin.configs!.recommended,
+  vitestPlugin.configs.recommended,
 ];
 
 const _files: (string | string[])[] = ["**/?(*.)+(spec|test).ts?(x)"];
