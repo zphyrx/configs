@@ -2,13 +2,13 @@ import prettierPlugin from "eslint-plugin-prettier/recommended";
 
 import { rulesPrettier } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [prettierPlugin];
+const _extends: FlatConfig.ConfigArray = [prettierPlugin];
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesPrettier,
 };
 

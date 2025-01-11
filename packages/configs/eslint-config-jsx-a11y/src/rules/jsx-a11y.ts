@@ -1,6 +1,6 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const rules: TSESLint.FlatConfig.Rules = {
+const rules: FlatConfig.Rules = {
   "jsx-a11y/alt-text": "warn",
   "jsx-a11y/anchor-has-content": [
     "warn",

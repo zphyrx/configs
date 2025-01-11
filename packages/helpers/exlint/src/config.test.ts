@@ -1,10 +1,10 @@
 import * as exlint from "./index";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
 describe("config helper", (): void => {
   it("should work without extends", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config({
+    const config: FlatConfig.ConfigArray = exlint.config({
       files: ["**/?(*.)+(spec|test).ts?(x)"],
       ignores: ["**/__tests__/**/*.ts?(x)"],
       rules: {
@@ -24,7 +24,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config({
+    const config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -62,7 +62,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs with files and ignores", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config({
+    const config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -108,7 +108,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs with config name", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config({
+    const config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -158,7 +158,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs with names if base config is unnamed", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config({
+    const config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           name: "extension-1",
@@ -206,7 +206,7 @@ describe("config helper", (): void => {
   });
 
   it("should merge config item names", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config({
+    const config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           name: "extension-1",
@@ -257,7 +257,7 @@ describe("config helper", (): void => {
   });
 
   it("should allow nested arrays in the config function", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config(
+    const config: FlatConfig.ConfigArray = exlint.config(
       {
         rules: {
           "vitest/no-test-return-statement": "warn",
@@ -335,7 +335,7 @@ describe("config helper", (): void => {
   });
 
   it("should allow nested arrays in extends", (): void => {
-    const config: TSESLint.FlatConfig.ConfigArray = exlint.config({
+    const config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -423,13 +423,13 @@ describe("config helper", (): void => {
   });
 
   it("throws error containing config name when some extensions are undefined", (): void => {
-    const extension: TSESLint.FlatConfig.Config = {
+    const extension: FlatConfig.Config = {
       rules: {
         rule1: "error",
       },
     };
 
-    const config = (): TSESLint.FlatConfig.ConfigArray =>
+    const config = (): FlatConfig.ConfigArray =>
       exlint.config(
         {
           extends: [extension],
@@ -458,13 +458,13 @@ describe("config helper", (): void => {
   });
 
   it("throws error without config name when some extensions are undefined", (): void => {
-    const extension: TSESLint.FlatConfig.Config = {
+    const extension: FlatConfig.Config = {
       rules: {
         rule1: "error",
       },
     };
 
-    const config = (): TSESLint.FlatConfig.ConfigArray =>
+    const config = (): FlatConfig.ConfigArray =>
       exlint.config(
         {
           extends: [extension],

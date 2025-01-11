@@ -1,6 +1,6 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const rules: TSESLint.FlatConfig.Rules = {
+const rules: FlatConfig.Rules = {
   "import-x/namespace": "error",
   "import-x/first": "error",
   "import-x/no-amd": "error",

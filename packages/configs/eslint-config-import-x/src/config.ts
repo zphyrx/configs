@@ -2,16 +2,16 @@ import importXPlugin from "eslint-plugin-import-x";
 
 import { rulesImportX } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
+const _extends: FlatConfig.ConfigArray = [
   importXPlugin.flatConfigs.recommended,
   importXPlugin.flatConfigs.typescript,
 ];
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesImportX,
 };
 

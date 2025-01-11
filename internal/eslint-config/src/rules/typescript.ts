@@ -1,6 +1,6 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const rules: TSESLint.FlatConfig.Rules = {
+const rules: FlatConfig.Rules = {
   "no-dupe-class-members": "off",
   "no-duplicate-imports": "error",
   "no-undef": "off",

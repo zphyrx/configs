@@ -2,15 +2,15 @@ import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 
 import { rulesJsxA11y } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
+const _extends: FlatConfig.ConfigArray = [
   jsxA11yPlugin.flatConfigs.recommended,
 ];
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesJsxA11y,
 };
 

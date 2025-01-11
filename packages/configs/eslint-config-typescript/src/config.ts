@@ -2,16 +2,16 @@ import tseslint from "typescript-eslint";
 
 import { rulesTypeScript } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
+const _extends: FlatConfig.ConfigArray = [
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
 ];
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
 
-const _languageOptions: TSESLint.FlatConfig.LanguageOptions = {
+const _languageOptions: FlatConfig.LanguageOptions = {
   parser: tseslint.parser,
   parserOptions: {
     sourceType: "module",
@@ -22,7 +22,7 @@ const _languageOptions: TSESLint.FlatConfig.LanguageOptions = {
   },
 };
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesTypeScript,
 };
 

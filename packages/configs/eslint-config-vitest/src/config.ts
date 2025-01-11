@@ -2,15 +2,13 @@ import vitestPlugin from "@vitest/eslint-plugin";
 
 import { rulesVitest } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
-  vitestPlugin.configs.recommended,
-];
+const _extends: FlatConfig.ConfigArray = [vitestPlugin.configs.recommended];
 
 const _files: (string | string[])[] = ["**/?(*.)+(spec|test).ts?(x)"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesVitest,
 };
 
