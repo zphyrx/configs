@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-internal
 
+## 1.1.3
+
+### Patch Changes
+
+- 7a70d44: Refactor `@typescript-eslint/utils` imports
+
 ## 1.1.2
 
 ### Patch Changes
