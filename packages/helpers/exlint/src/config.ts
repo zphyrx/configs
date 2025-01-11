@@ -1,14 +1,14 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
 type FlatConfigWithExtends = ConfigWithExtends | FlatConfigWithExtends[];
 
-type ConfigWithExtends = TSESLint.FlatConfig.Config & {
+type ConfigWithExtends = FlatConfig.Config & {
   extends?: FlatConfigWithExtends[];
 };
 
 const config = (
   ...configs: FlatConfigWithExtends[]
-): TSESLint.FlatConfig.ConfigArray => {
+): FlatConfig.ConfigArray => {
   // @ts-expect-error
   const flattened = configs.flat(Infinity) as ConfigWithExtends[];
 
@@ -21,7 +21,7 @@ const config = (
 
     const undefinedExt = extendsFlattened
       .map((ext, extIndex) =>
-        (ext as TSESLint.FlatConfig.Config | undefined) == null ? extIndex : -1,
+        (ext as FlatConfig.Config | undefined) == null ? extIndex : -1,
       )
       .filter((index) => index !== -1);
 

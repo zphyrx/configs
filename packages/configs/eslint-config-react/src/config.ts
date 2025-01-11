@@ -4,7 +4,7 @@ import { FlatCompat } from "@eslint/eslintrc";
 
 import { rulesReact, rulesReactHooks } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
 const cwd = process.cwd();
 
@@ -12,21 +12,21 @@ const compat = new FlatCompat({
   baseDirectory: cwd,
 });
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
-  reactPlugin.configs.flat!.recommended as TSESLint.FlatConfig.Config,
-  reactPlugin.configs.flat!.recommended as TSESLint.FlatConfig.Config,
-  reactPlugin.configs.flat!["jsx-runtime"] as TSESLint.FlatConfig.Config,
+const _extends: FlatConfig.ConfigArray = [
+  reactPlugin.configs.flat!.recommended as FlatConfig.Config,
+  reactPlugin.configs.flat!.recommended as FlatConfig.Config,
+  reactPlugin.configs.flat!["jsx-runtime"] as FlatConfig.Config,
   ...fixupConfigRules(compat.extends("plugin:react-hooks/recommended")),
 ];
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesReact,
   ...rulesReactHooks,
 };
 
-const _settings: TSESLint.FlatConfig.Settings = {
+const _settings: FlatConfig.Settings = {
   react: {
     version: "detect",
   },

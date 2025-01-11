@@ -6,9 +6,9 @@ import prettierPlugin from "eslint-plugin-prettier/recommended";
 import { GLOB_TESTS, GLOB_TS } from "./globs";
 import * as rules from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const config: TSESLint.FlatConfig.ConfigArray = tseslint.config(
+const config: FlatConfig.ConfigArray = tseslint.config(
   {
     name: "@zphyrx/eslint-config-internal/global-ignores",
     ignores: ["**/node_modules/**", "**/dist/**", "**/coverage/**"],

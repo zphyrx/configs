@@ -1,8 +1,8 @@
 import * as base from "@zphyrx/eslint-config-internal";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const config: TSESLint.FlatConfig.ConfigArray = [
+const config: FlatConfig.ConfigArray = [
   ...base.config,
   {
     name: "@zphyrx/eslint-config-internal/typescript",

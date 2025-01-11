@@ -1,6 +1,6 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const rules: TSESLint.FlatConfig.Rules = {
+const rules: FlatConfig.Rules = {
   "storybook/default-exports": "error",
   "storybook/hierarchy-separator": "warn",
   "storybook/no-redundant-story-name": "warn",

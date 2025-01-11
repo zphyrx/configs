@@ -1,6 +1,6 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const rules: TSESLint.FlatConfig.Rules = {
+const rules: FlatConfig.Rules = {
   "testing-library/await-async-queries": "error",
   "testing-library/await-async-utils": "error",
   "testing-library/no-await-sync-queries": "warn",

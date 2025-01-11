@@ -2,15 +2,15 @@ import testingLibraryPlugin from "eslint-plugin-testing-library";
 
 import { rulesReact } from "../rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
+const _extends: FlatConfig.ConfigArray = [
   testingLibraryPlugin.configs["flat/react"],
 ];
 
 const _files: (string | string[])[] = ["**/?(*.)+(spec|test).ts?(x)"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesReact,
 };
 

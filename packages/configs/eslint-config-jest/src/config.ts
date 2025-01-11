@@ -2,16 +2,16 @@ import jestPlugin from "eslint-plugin-jest";
 
 import { rulesJest } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
+const _extends: FlatConfig.ConfigArray = [
   jestPlugin.configs["flat/recommended"],
   jestPlugin.configs["flat/style"],
 ];
 
 const _files: (string | string[])[] = ["**/?(*.)+(spec|test).ts?(x)"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesJest,
 };
 

@@ -2,15 +2,15 @@ import storybookPlugin from "eslint-plugin-storybook";
 
 import { rulesStorybook } from "./rules";
 
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-const _extends: TSESLint.FlatConfig.ConfigArray = [
+const _extends: FlatConfig.ConfigArray = [
   ...storybookPlugin.configs["flat/recommended"],
 ];
 
 const _files: (string | string[])[] = ["**/*.stories.ts?(x)"];
 
-const _rules: TSESLint.FlatConfig.Rules = {
+const _rules: FlatConfig.Rules = {
   ...rulesStorybook,
 };
 
