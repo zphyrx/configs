@@ -37,7 +37,7 @@
     "@vitest/eslint-plugin": "^1.1.24"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.19.0",
+    "@typescript-eslint/utils": "^8.19.1",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.18.0",
