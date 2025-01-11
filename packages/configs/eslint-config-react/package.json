@@ -34,7 +34,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "@eslint/compat": "^1.2.4",
+    "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0"
