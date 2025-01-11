@@ -1,5 +1,13 @@
 # @zphyrx/prettier-config
 
+## 1.1.1
+
+### Patch Changes
+
+- 7a70d44: Refactor `@typescript-eslint/utils` imports
+- Updated dependencies [7a70d44]
+  - @zphyrx/merge-config@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes

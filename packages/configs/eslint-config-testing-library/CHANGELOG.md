@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-testing-library
 
+## 1.1.1
+
+### Patch Changes
+
+- 7a70d44: Refactor `@typescript-eslint/utils` imports
+
 ## 1.1.0
 
 ### Minor Changes
