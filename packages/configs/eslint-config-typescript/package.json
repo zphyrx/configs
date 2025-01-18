@@ -30,7 +30,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "check-types": "tsc",
-    "lint": "eslint --flag unstable_ts_config . --max-warnings 0",
+    "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
