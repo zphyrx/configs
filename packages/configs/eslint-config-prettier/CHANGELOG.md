@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-prettier
 
+## 1.1.2
+
+### Patch Changes
+
+- 3944a08: Remove unnecessary `unstable_ts_config` flag
+
 ## 1.1.1
 
 ### Patch Changes
