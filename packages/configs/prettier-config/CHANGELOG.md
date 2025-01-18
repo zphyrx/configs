@@ -1,5 +1,13 @@
 # @zphyrx/prettier-config
 
+## 1.1.2
+
+### Patch Changes
+
+- 3944a08: Remove unnecessary `unstable_ts_config` flag
+- Updated dependencies [3944a08]
+  - @zphyrx/merge-config@1.1.2
+
 ## 1.1.1
 
 ### Patch Changes
