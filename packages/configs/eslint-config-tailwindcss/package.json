@@ -33,7 +33,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "eslint-plugin-tailwindcss": "^3.17.5"
+    "eslint-plugin-tailwindcss": "^3.18.0"
   },
   "devDependencies": {
     "@types/eslint-plugin-tailwindcss": "^3.17.0",
