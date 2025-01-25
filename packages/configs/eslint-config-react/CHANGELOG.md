@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-react
 
+## 1.1.3
+
+### Patch Changes
+
+- d50ef6c: Remove TypeScript’s non-null assertion (`!`) for `reacttPlugin.configs.recommended` in the `extends` field
+
 ## 1.1.2
 
 ### Patch Changes
