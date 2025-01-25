@@ -12,11 +12,9 @@ const compat = new FlatCompat({
   baseDirectory: cwd,
 });
 
-// TODO - Remove TypeScript’s non-null assertion (`!`).
 const _extends: FlatConfig.ConfigArray = [
-  reactPlugin.configs.flat!.recommended as FlatConfig.Config,
-  reactPlugin.configs.flat!.recommended as FlatConfig.Config,
-  reactPlugin.configs.flat!["jsx-runtime"] as FlatConfig.Config,
+  reactPlugin.configs.flat.recommended as FlatConfig.Config,
+  reactPlugin.configs.flat["jsx-runtime"] as FlatConfig.Config,
   ...fixupConfigRules(compat.extends("plugin:react-hooks/recommended")),
 ];
 
