@@ -40,10 +40,10 @@
     "eslint-plugin-import-x": "^4.6.1",
     "eslint-plugin-prettier": "^5.2.3",
     "jiti": "^2.4.2",
-    "typescript-eslint": "^8.23.0"
+    "typescript-eslint": "^8.24.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.23.0",
+    "@typescript-eslint/utils": "^8.24.0",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.20.1",
     "tsup": "^8.3.6",
