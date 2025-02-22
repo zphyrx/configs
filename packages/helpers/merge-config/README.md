@@ -14,7 +14,7 @@ $ pnpm add -D @zphyrx/merge-config
 
 ## Usage
 
-Import `@zphyrx/mergeConfig` to merge two configuration objects:
+Import `@zphyrx/merge-config` to merge two configuration objects:
 
 ```ts
 import { mergeConfig } from "@zphyrx/merge-config";
