@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-jsx-a11y
 
+## 1.1.3
+
+### Patch Changes
+
+- 7bbe6e9: Refactor exports
+
 ## 1.1.2
 
 ### Patch Changes

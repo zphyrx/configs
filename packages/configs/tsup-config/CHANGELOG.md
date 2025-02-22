@@ -1,5 +1,13 @@
 # @zphyrx/tsup-config
 
+## 1.1.3
+
+### Patch Changes
+
+- 7bbe6e9: Refactor exports
+- Updated dependencies [7bbe6e9]
+  - @zphyrx/merge-config@1.1.3
+
 ## 1.1.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-react
 
+## 1.2.1
+
+### Patch Changes
+
+- 7bbe6e9: Refactor exports
+
 ## 1.2.0
 
 ### Minor Changes
