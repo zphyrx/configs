@@ -1,1 +1,1 @@
-export { extends, files, rules, config } from "./config";
+export * from "./config";

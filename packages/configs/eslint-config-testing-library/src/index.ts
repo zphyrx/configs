@@ -1,1 +1,1 @@
-export { react, vue } from "./config";
+export * from "./config";

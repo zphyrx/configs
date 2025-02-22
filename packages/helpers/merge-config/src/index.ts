@@ -1,1 +1,1 @@
-export { mergeConfig } from "./merge-config";
+export * from "./merge-config";
