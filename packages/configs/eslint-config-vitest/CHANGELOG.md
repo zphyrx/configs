@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-vitest
 
+## 1.1.5
+
+### Patch Changes
+
+- 7bbe6e9: Refactor exports
+
 ## 1.1.4
 
 ### Patch Changes
