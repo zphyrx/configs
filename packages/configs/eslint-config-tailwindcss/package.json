@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "eslint": "^9.21.0",
-    "tailwindcss": "^4.0.8"
+    "tailwindcss": "^4.0.9"
   },
   "publishConfig": {
     "access": "public"
