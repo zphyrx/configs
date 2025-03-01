@@ -5,11 +5,9 @@ import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 const config: FlatConfig.ConfigArray = [
   ...base.config,
   {
-    name: "@zphyrx/eslint-config-internal/typescritp",
+    name: "@zphyrx/eslint-config-internal/import-x",
     rules: {
-      "@typescript-eslint/restrict-template-expressions": "warn",
-      "@typescript-eslint/no-unsafe-assignment": "off",
-      "@typescript-eslint/no-unsafe-member-access": "off",
+      "import-x/default": "off",
     },
   },
 ];

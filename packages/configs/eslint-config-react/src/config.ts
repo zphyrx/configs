@@ -1,5 +1,4 @@
 import reactPlugin from "eslint-plugin-react";
-//@ts-expect-error -- missing type declaration file
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 
 import { rulesReact, rulesReactHooks } from "./rules";
@@ -9,6 +8,7 @@ import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 const _extends: FlatConfig.ConfigArray = [
   reactPlugin.configs.flat.recommended as FlatConfig.Config,
   reactPlugin.configs.flat["jsx-runtime"] as FlatConfig.Config,
+  reactHooksPlugin.configs["recommended-latest"],
 ];
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
@@ -19,7 +19,6 @@ const _plugins: FlatConfig.Plugins = {
 
 const _rules: FlatConfig.Rules = {
   ...rulesReact,
-  ...reactHooksPlugin.configs.recommended.rules,
   ...rulesReactHooks,
 };
 
