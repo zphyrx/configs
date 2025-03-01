@@ -16,7 +16,7 @@
 
 ### Patch Changes
 
-- d50ef6c: Remove TypeScript’s non-null assertion (`!`) for `reacttPlugin.configs.recommended` in the `extends` field
+- d50ef6c: Remove TypeScript’s non-null assertion (`!`) for `reactPlugin.configs.recommended` in the `extends` field
 
 ## 1.1.2
 
