@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-react
 
+## 1.3.0
+
+### Minor Changes
+
+- 4b7e66f: Remove `plugins` field
+
 ## 1.2.1
 
 ### Patch Changes
