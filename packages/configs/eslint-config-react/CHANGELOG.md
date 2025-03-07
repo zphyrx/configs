@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-react
 
+## 1.3.1
+
+### Patch Changes
+
+- b2c3529: Remove unnecessary `eslint` dependencies
+
 ## 1.3.0
 
 ### Minor Changes
