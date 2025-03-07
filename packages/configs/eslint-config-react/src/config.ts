@@ -13,10 +13,6 @@ const _extends: FlatConfig.ConfigArray = [
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
 
-const _plugins: FlatConfig.Plugins = {
-  "react-hooks": reactHooksPlugin,
-};
-
 const _rules: FlatConfig.Rules = {
   ...rulesReact,
   ...rulesReactHooks,
@@ -31,7 +27,6 @@ const _settings: FlatConfig.Settings = {
 const _config = {
   extends: _extends,
   files: _files,
-  plugins: _plugins,
   rules: _rules,
   settings: _settings,
 };
@@ -39,7 +34,6 @@ const _config = {
 export {
   _extends as extends,
   _files as files,
-  _plugins as plugins,
   _rules as rules,
   _settings as settings,
   _config as config,
