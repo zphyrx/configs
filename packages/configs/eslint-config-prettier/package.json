@@ -34,7 +34,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "eslint-config-prettier": "^10.0.2",
+    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.3"
   },
   "devDependencies": {
