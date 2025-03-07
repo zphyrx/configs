@@ -42,7 +42,7 @@
   "devDependencies": {
     "@types/eslint__eslintrc": "^2.1.2",
     "@types/node": "^22.13.9",
-    "@typescript-eslint/utils": "^8.25.0",
+    "@typescript-eslint/utils": "^8.26.0",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.21.0",
