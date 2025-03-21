@@ -27,7 +27,7 @@
     "typescript": "^5.8.2"
   },
   "peerDependencies": {},
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.6.5",
   "engines": {
     "node": ">=22.14.0"
   }
