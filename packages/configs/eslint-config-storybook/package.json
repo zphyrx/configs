@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "eslint": "^9.22.0",
-    "storybook": "^8.6.5"
+    "storybook": "^8.6.7"
   },
   "publishConfig": {
     "access": "public"
