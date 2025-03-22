@@ -34,7 +34,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "@vitest/eslint-plugin": "^1.1.37"
+    "@vitest/eslint-plugin": "^1.1.38"
   },
   "devDependencies": {
     "@typescript-eslint/utils": "^8.27.0",
