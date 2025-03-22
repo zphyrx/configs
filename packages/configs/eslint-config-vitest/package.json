@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "eslint": "^9.23.0",
-    "vitest": "^3.0.8"
+    "vitest": "^3.0.9"
   },
   "publishConfig": {
     "access": "public"
