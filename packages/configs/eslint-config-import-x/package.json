@@ -34,7 +34,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "eslint-import-resolver-typescript": "^3.8.7",
+    "eslint-import-resolver-typescript": "^4.2.2",
     "eslint-plugin-import-x": "^4.7.0"
   },
   "devDependencies": {
