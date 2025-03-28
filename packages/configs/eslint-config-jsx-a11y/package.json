@@ -47,7 +47,7 @@
   },
   "peerDependencies": {
     "eslint": "^9.23.0",
-    "react": "^19.0.0"
+    "react": "^19.1.0"
   },
   "publishConfig": {
     "access": "public"
