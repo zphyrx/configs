@@ -34,7 +34,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "eslint-plugin-storybook": "^0.11.6"
+    "eslint-plugin-storybook": "^0.12.0"
   },
   "devDependencies": {
     "@typescript-eslint/utils": "^8.27.0",
