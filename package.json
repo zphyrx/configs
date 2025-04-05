@@ -24,7 +24,7 @@
     "@zphyrx/prettier-config": "workspace:^",
     "prettier": "^3.5.3",
     "turbo": "^2.5.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {},
   "packageManager": "pnpm@10.7.1",
