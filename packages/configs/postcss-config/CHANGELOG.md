@@ -1,5 +1,12 @@
 # @zphyrx/postcss-config
 
+## 1.1.4
+
+### Patch Changes
+
+- d0a1852: Add `peerDependenciesMeta` field to `package.json`
+  - @zphyrx/merge-config@1.1.3
+
 ## 1.1.3
 
 ### Patch Changes

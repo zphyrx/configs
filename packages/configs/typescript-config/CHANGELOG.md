@@ -1,5 +1,11 @@
 # @zphyrx/typescript-config
 
+## 1.1.1
+
+### Patch Changes
+
+- d0a1852: Add `peerDependenciesMeta` field to `package.json`
+
 ## 1.1.0
 
 ### Minor Changes

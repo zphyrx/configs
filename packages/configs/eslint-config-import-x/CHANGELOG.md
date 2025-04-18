@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-import-x
 
+## 1.1.4
+
+### Patch Changes
+
+- d0a1852: Add `peerDependenciesMeta` field to `package.json`
+
 ## 1.1.3
 
 ### Patch Changes
