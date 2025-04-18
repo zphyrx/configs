@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-react
 
+## 1.3.2
+
+### Patch Changes
+
+- d0a1852: Add `peerDependenciesMeta` field to `package.json`
+
 ## 1.3.1
 
 ### Patch Changes

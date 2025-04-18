@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-vitest
 
+## 1.1.6
+
+### Patch Changes
+
+- d0a1852: Add `peerDependenciesMeta` field to `package.json`
+
 ## 1.1.5
 
 ### Patch Changes
