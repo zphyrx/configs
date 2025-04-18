@@ -59,6 +59,11 @@
   "peerDependencies": {
     "eslint": "^9.25.0"
   },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "access": "public"
   }

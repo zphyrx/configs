@@ -47,6 +47,11 @@
   "peerDependencies": {
     "prettier": "^3.5.3"
   },
+  "peerDependenciesMeta": {
+    "prettier": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "access": "public"
   }

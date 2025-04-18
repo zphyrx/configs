@@ -48,6 +48,14 @@
     "eslint": "^9.25.0",
     "typescript": "^5.8.3"
   },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "access": "public"
   }

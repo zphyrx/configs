@@ -50,6 +50,14 @@
     "eslint": "^9.25.0",
     "react": "^19.1.0"
   },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "access": "public"
   }

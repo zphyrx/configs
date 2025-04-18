@@ -22,7 +22,7 @@
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noUnusedParameters": true,
-    "noUncheckedIndexedAccess": true,
+    "noUncheckedIndexedAccess": false,
 
     /**
      * EMIT RULES
