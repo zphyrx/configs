@@ -34,10 +34,10 @@ importers:
         version: 10.1.2(eslint@9.24.0(jiti@2.4.2))
       eslint-import-resolver-typescript:
         specifier: ^4.3.2
-        version: 4.3.2(eslint-plugin-import-x@4.10.2(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))
+        version: 4.3.2(eslint-plugin-import-x@4.10.5(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))
       eslint-plugin-import-x:
-        specifier: ^4.10.2
-        version: 4.10.2(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
+        specifier: ^4.10.5
+        version: 4.10.5(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
       eslint-plugin-prettier:
         specifier: ^5.2.6
         version: 5.2.6(@types/eslint@9.6.1)(eslint-config-prettier@10.1.2(eslint@9.24.0(jiti@2.4.2)))(eslint@9.24.0(jiti@2.4.2))(prettier@3.5.3)
@@ -68,10 +68,10 @@ importers:
     dependencies:
       eslint-import-resolver-typescript:
         specifier: ^4.3.2
-        version: 4.3.2(eslint-plugin-import-x@4.10.2(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))
+        version: 4.3.2(eslint-plugin-import-x@4.10.5(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))
       eslint-plugin-import-x:
-        specifier: ^4.10.2
-        version: 4.10.2(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
+        specifier: ^4.10.5
+        version: 4.10.5(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
     devDependencies:
       '@typescript-eslint/utils':
         specifier: ^8.30.1
@@ -1241,8 +1241,8 @@ packages:
     resolution: {integrity: sha512-vsJDAkYR6qCPu+ioGScGiMYR7LvZYIXh/dlQeviqoTWNCVfKTLYD/LkNWH4Mxsv2a5vpIRc77FN5DnmK1eBggQ==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@pkgr/core@0.2.2':
-    resolution: {integrity: sha512-25L86MyPvnlQoX2MTIV2OiUcb6vJ6aRbFa9pbwByn95INKD5mFH2smgjDhq+fwJoqAgvgbdJLj6Tz7V9X5CFAQ==}
+  '@pkgr/core@0.2.4':
+    resolution: {integrity: sha512-ROFF39F6ZrnzSUEmQQZUar0Jt4xVoP9WnDRdWwF4NNcXs3xBTLgBUDoOwW141y1jP+S8nahIbdxbFC7IShw9Iw==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
   '@rollup/rollup-android-arm-eabi@4.34.8':
@@ -2105,8 +2105,8 @@ packages:
       eslint-plugin-import-x:
         optional: true
 
-  eslint-plugin-import-x@4.10.2:
-    resolution: {integrity: sha512-jO3Y6+zBUyTX5MVbbLSzoz6fe65t+WEBaXStRLM4EBhZWbuSwAH3cLwARtM0Yp4zRtZGp9sL2zzK7G9JkHR8LA==}
+  eslint-plugin-import-x@4.10.5:
+    resolution: {integrity: sha512-cmteCl8P5q1lkuL/4qqQw1uvnQHytpv2fjHFZ2UIqSfkM0RwWm/KLgasXKIqDRjgMnmUJTeyP8+9hDpJJuiZgg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
@@ -4640,7 +4640,7 @@ snapshots:
 
   '@pkgr/core@0.2.0': {}
 
-  '@pkgr/core@0.2.2': {}
+  '@pkgr/core@0.2.4': {}
 
   '@rollup/rollup-android-arm-eabi@4.34.8':
     optional: true
@@ -5615,7 +5615,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@4.3.2(eslint-plugin-import-x@4.10.2(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2)):
+  eslint-import-resolver-typescript@4.3.2(eslint-plugin-import-x@4.10.5(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2)):
     dependencies:
       debug: 4.4.0
       eslint: 9.24.0(jiti@2.4.2)
@@ -5625,13 +5625,13 @@ snapshots:
       tinyglobby: 0.2.12
       unrs-resolver: 1.5.0
     optionalDependencies:
-      eslint-plugin-import-x: 4.10.2(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
+      eslint-plugin-import-x: 4.10.5(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import-x@4.10.2(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3):
+  eslint-plugin-import-x@4.10.5(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3):
     dependencies:
-      '@pkgr/core': 0.2.2
+      '@pkgr/core': 0.2.4
       '@types/doctrine': 0.0.9
       '@typescript-eslint/utils': 8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
       debug: 4.4.0
