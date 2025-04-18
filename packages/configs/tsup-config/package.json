@@ -47,6 +47,11 @@
   "peerDependencies": {
     "tsup": "^8.4.0"
   },
+  "peerDependenciesMeta": {
+    "tsup": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "access": "public"
   }

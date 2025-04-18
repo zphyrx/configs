@@ -48,6 +48,14 @@
     "eslint": "^9.25.0",
     "tailwindcss": "^4.1.4"
   },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "tailwindcss": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "access": "public"
   }
