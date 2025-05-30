@@ -40,12 +40,12 @@
     "@typescript-eslint/utils": "^8.32.0",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
-    "eslint": "^9.26.0",
+    "eslint": "^9.28.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "eslint": "^9.26.0",
+    "eslint": "^9.28.0",
     "storybook": "^8.6.12"
   },
   "peerDependenciesMeta": {
