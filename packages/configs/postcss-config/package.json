@@ -37,7 +37,7 @@
     "@zphyrx/merge-config": "workspace:*"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.33.1",
+    "@typescript-eslint/utils": "^8.34.1",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.28.0",
