@@ -27,8 +27,8 @@ importers:
   internal/eslint-config:
     dependencies:
       '@vitest/eslint-plugin':
-        specifier: ^1.2.1
-        version: 1.2.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/node@22.15.32)(jiti@2.4.2)(yaml@2.6.1))
+        specifier: ^1.2.7
+        version: 1.2.7(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/node@22.15.32)(jiti@2.4.2)(yaml@2.6.1))
       eslint-config-prettier:
         specifier: ^10.1.5
         version: 10.1.5(eslint@9.29.0(jiti@2.4.2))
@@ -328,8 +328,8 @@ importers:
   packages/configs/eslint-config-vitest:
     dependencies:
       '@vitest/eslint-plugin':
-        specifier: ^1.2.1
-        version: 1.2.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/node@22.15.32)(jiti@2.4.2)(yaml@2.6.1))
+        specifier: ^1.2.7
+        version: 1.2.7(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/node@22.15.32)(jiti@2.4.2)(yaml@2.6.1))
       vitest:
         specifier: ^3.2.3
         version: 3.2.3(@types/node@22.15.32)(jiti@2.4.2)(yaml@2.6.1)
@@ -1596,8 +1596,8 @@ packages:
       '@vitest/browser':
         optional: true
 
-  '@vitest/eslint-plugin@1.2.1':
-    resolution: {integrity: sha512-JQr1jdVcrsoS7Sdzn83h9sq4DvREf9Q/onTZbJCqTVlv/76qb+TZrLv/9VhjnjSMHweQH5FdpMDeCR6aDe2fgw==}
+  '@vitest/eslint-plugin@1.2.7':
+    resolution: {integrity: sha512-7WHcGZo6uXsE4SsSnpGDqKyGrd6NfOMM52WKoHSpTRZLbjMuDyHfA5P7m8yrr73tpqYjsiAdSjSerOnx8uEhpA==}
     peerDependencies:
       eslint: '>= 8.57.0'
       typescript: '>= 5.0.0'
@@ -5123,7 +5123,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/eslint-plugin@1.2.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/node@22.15.32)(jiti@2.4.2)(yaml@2.6.1))':
+  '@vitest/eslint-plugin@1.2.7(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.3(@types/node@22.15.32)(jiti@2.4.2)(yaml@2.6.1))':
     dependencies:
       '@typescript-eslint/utils': 8.34.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)
       eslint: 9.29.0(jiti@2.4.2)
