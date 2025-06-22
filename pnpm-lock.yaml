@@ -95,8 +95,8 @@ importers:
   packages/configs/eslint-config-jest:
     dependencies:
       eslint-plugin-jest:
-        specifier: ^28.13.0
-        version: 28.13.0(@typescript-eslint/eslint-plugin@8.34.1(@typescript-eslint/parser@8.34.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(jest@30.0.2(@types/node@22.15.32)(esbuild-register@3.6.0(esbuild@0.25.0)))(typescript@5.8.3)
+        specifier: ^28.14.0
+        version: 28.14.0(@typescript-eslint/eslint-plugin@8.34.1(@typescript-eslint/parser@8.34.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(jest@30.0.2(@types/node@22.15.32)(esbuild-register@3.6.0(esbuild@0.25.0)))(typescript@5.8.3)
       jest:
         specifier: ^30.0.2
         version: 30.0.2(@types/node@22.15.32)(esbuild-register@3.6.0(esbuild@0.25.0))
@@ -2250,8 +2250,8 @@ packages:
       eslint-import-resolver-node:
         optional: true
 
-  eslint-plugin-jest@28.13.0:
-    resolution: {integrity: sha512-4AuBcFWOriOeEqy6s4Zup/dQ7E1EPTyyfDaMYmM2YP9xEWPWwK3yYifH1dzY6aHRvyx7y53qMSIyT5s+jrorsQ==}
+  eslint-plugin-jest@28.14.0:
+    resolution: {integrity: sha512-P9s/qXSMTpRTerE2FQ0qJet2gKbcGyFTPAJipoKxmWqR6uuFqIqk8FuEfg5yBieOezVrEfAMZrEwJ6yEp+1MFQ==}
     engines: {node: ^16.10.0 || ^18.12.0 || >=20.0.0}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -5986,7 +5986,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-jest@28.13.0(@typescript-eslint/eslint-plugin@8.34.1(@typescript-eslint/parser@8.34.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(jest@30.0.2(@types/node@22.15.32)(esbuild-register@3.6.0(esbuild@0.25.0)))(typescript@5.8.3):
+  eslint-plugin-jest@28.14.0(@typescript-eslint/eslint-plugin@8.34.1(@typescript-eslint/parser@8.34.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(jest@30.0.2(@types/node@22.15.32)(esbuild-register@3.6.0(esbuild@0.25.0)))(typescript@5.8.3):
     dependencies:
       '@typescript-eslint/utils': 8.34.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)
       eslint: 9.29.0(jiti@2.4.2)
