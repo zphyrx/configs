@@ -1,48 +1,73 @@
+import { flatten } from "./flatten";
+
 import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-type FlatConfigWithExtends = ConfigWithExtends | FlatConfigWithExtends[];
+type Config = FlatConfig.Config;
+type ConfigArray = FlatConfig.ConfigArray;
 
-type ConfigWithExtends = FlatConfig.Config & {
-  extends?: FlatConfigWithExtends[];
+type InfiniteDepthConfigWithExtends =
+  | ConfigWithExtends
+  | InfiniteDepthConfigWithExtends[];
+
+type ConfigWithExtends = Config & {
+  extends?: InfiniteDepthConfigWithExtends[];
 };
 
-const config = (
-  ...configs: FlatConfigWithExtends[]
-): FlatConfig.ConfigArray => {
-  // @ts-expect-error
-  const flattened = configs.flat(Infinity) as ConfigWithExtends[];
+const config = (...configs: InfiniteDepthConfigWithExtends[]): ConfigArray => {
+  let flattened = flatten(
+    configs,
+    Number.POSITIVE_INFINITY,
+  ) as ConfigWithExtends[];
 
-  return flattened.flatMap((configWithExtends, configIndex) => {
-    const { extends: _extends, ...config } = configWithExtends;
+  return flattened.flatMap(
+    (configWithExtends, configIndex): Config | ConfigArray => {
+      let { extends: extendsArr, ...config } = configWithExtends;
 
-    if (!_extends || _extends.length === 0) return config;
-
-    const extendsFlattened = _extends.flat(Infinity) as ConfigWithExtends[];
-
-    const undefinedExt = extendsFlattened
-      .map((ext, extIndex) =>
-        (ext as FlatConfig.Config | undefined) == null ? extIndex : -1,
-      )
-      .filter((index) => index !== -1);
-
-    if (undefinedExt.length > 0) {
-      const configName =
+      let configName =
         configWithExtends.name != null
           ? `, named "${configWithExtends.name}",`
           : " (anonymous)";
-      const extIndices = undefinedExt.join(", ");
 
-      throw new Error(
-        `Your config at index ${configIndex}${configName} contains undefined` +
-          ` extensions at the following indices: ${extIndices}.`,
+      if (extendsArr && !Array.isArray(extendsArr)) {
+        throw new TypeError(
+          `exlint.config(): Config at index ${configIndex}${configName} has an 'extends' property` +
+            ` that is NOT an array.`,
+        );
+      }
+
+      if (!extendsArr || sizeof(extendsArr) === 0) {
+        return config;
+      }
+
+      let flattened = flatten(
+        extendsArr as ConfigWithExtends[],
+        Number.POSITIVE_INFINITY,
       );
-    }
+      let undefIndexExt: number[] = [];
 
-    return [
-      ...extendsFlattened.map((ext) => {
-        const name = [config.name, ext.name].filter(Boolean).join("__");
+      for (let [extIndex, ext] of flattened.entries()) {
+        let elem = ext as Config | undefined;
 
-        return {
+        if (elem == null || typeof elem !== "object") {
+          undefIndexExt.push(extIndex);
+        }
+      }
+
+      if (sizeof(undefIndexExt) > 0) {
+        let extIndices = undefIndexExt.join(", ");
+
+        throw new Error(
+          `exlint.config(): Config at index ${configIndex}${configName} contains undefined` +
+            ` extensions at the following indices: ${extIndices}.`,
+        );
+      }
+
+      let configArray: ConfigArray = [];
+
+      for (let ext of flattened) {
+        let name = [config.name, ext.name].filter(Boolean).join("__");
+
+        configArray.push({
           ...ext,
           ...(name && {
             name,
@@ -53,12 +78,17 @@ const config = (
           ...(config.ignores && {
             ignores: config.ignores,
           }),
-        };
-      }),
-      config,
-    ];
-  });
+        });
+      }
+
+      configArray.push(config);
+
+      return configArray;
+    },
+  );
 };
 
+const sizeof = (a: readonly unknown[]): number => a.length >>> 0;
+
 export { config };
-export type { ConfigWithExtends };
+export type { Config, ConfigArray, ConfigWithExtends };

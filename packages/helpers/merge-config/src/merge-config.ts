@@ -1,21 +1,40 @@
-const mergeConfig = <T>(defaults: T, overrides: T): T => {
-  const mergedConfig: T = { ...defaults };
+type AnyRecord = Record<string, any>;
 
-  for (const override in overrides) {
-    const overrideValue = overrides[override];
-    const defaultValue = mergedConfig[override];
+type DeepMerge<D, O> = D extends AnyRecord
+  ? O extends AnyRecord
+    ? {
+        [K in keyof D | keyof O]: K extends keyof O
+          ? K extends keyof D
+            ? DeepMerge<D[K], O[K]>
+            : O[K]
+          : K extends keyof D
+            ? D[K]
+            : never;
+      }
+    : D
+  : D;
+
+const mergeConfig = <D extends AnyRecord, O extends AnyRecord>(
+  defaults: D,
+  overrides: O,
+): DeepMerge<D, O> => {
+  let R: AnyRecord = { ...defaults };
+
+  for (let o in overrides) {
+    let overrideValue = overrides[o];
+    let defaultValue = R[o];
 
     if (isObject(overrideValue) && isObject(defaultValue)) {
-      mergedConfig[override] = mergeConfig(defaultValue, overrideValue);
+      R[o] = mergeConfig(defaultValue, overrideValue);
     } else {
-      mergedConfig[override] = overrideValue;
+      R[o] = overrideValue;
     }
   }
 
-  return mergedConfig;
+  return R as any;
 };
 
-const isObject = <T>(value: T): value is T & Record<string, unknown> =>
+const isObject = (value: unknown): value is AnyRecord =>
   typeof value === "object" && value !== null && !Array.isArray(value);
 
 export { mergeConfig };

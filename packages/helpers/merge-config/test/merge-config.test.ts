@@ -1,4 +1,4 @@
-import { mergeConfig } from "./index";
+import { mergeConfig } from "../src/index";
 
 type UserConfig = {
   test?: {
@@ -7,7 +7,7 @@ type UserConfig = {
   };
 };
 
-const configBase: UserConfig = {
+let configBase: UserConfig = {
   test: {
     globals: false,
     environment: "node",
@@ -16,7 +16,7 @@ const configBase: UserConfig = {
 
 describe("mergeConfig helper", (): void => {
   it("should override globals and retain environment when merging configs", (): void => {
-    const config: UserConfig = mergeConfig(configBase, {
+    let config: UserConfig = mergeConfig(configBase, {
       test: {
         globals: true,
         environment: "node",
@@ -32,7 +32,7 @@ describe("mergeConfig helper", (): void => {
   });
 
   it("should override environment and retain globals when merging configs", (): void => {
-    const config: UserConfig = mergeConfig(configBase, {
+    let config: UserConfig = mergeConfig(configBase, {
       test: {
         environment: "jsdom",
       },
@@ -47,7 +47,7 @@ describe("mergeConfig helper", (): void => {
   });
 
   it("should retain default config values when no overrides are provided", (): void => {
-    const config: UserConfig = mergeConfig(configBase, {});
+    let config: UserConfig = mergeConfig(configBase, {});
 
     expect(config).toEqual({
       test: {

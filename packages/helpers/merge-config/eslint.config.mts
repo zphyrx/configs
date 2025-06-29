@@ -7,7 +7,16 @@ const config: FlatConfig.ConfigArray = [
   {
     name: "@zphyrx/eslint-config-internal",
     rules: {
+      "prefer-const": "off",
       "no-duplicate-imports": "off",
+    },
+  },
+  {
+    name: "@zphyrx/eslint-config-internal/typescript",
+    rules: {
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unsafe-return": "off",
     },
   },
 ];
