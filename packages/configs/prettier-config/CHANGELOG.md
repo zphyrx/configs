@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- 6a63e96: ### Major Changes
+- 6a63e96: **Major Changes**
 
   #### 🧭 Meta
   - Starting with version 2.0.0, all packages in this monorepo use unified versioning
