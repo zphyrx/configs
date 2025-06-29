@@ -1,5 +1,5 @@
 import tseslint from "typescript-eslint";
-import importXPlugin from "eslint-plugin-import-x";
+import importPlugin from "eslint-plugin-import";
 import vitestPlugin from "@vitest/eslint-plugin";
 import prettierPlugin from "eslint-plugin-prettier/recommended";
 
@@ -36,13 +36,15 @@ const config: FlatConfig.ConfigArray = tseslint.config(
   },
   {
     extends: [
-      importXPlugin.flatConfigs.recommended,
-      importXPlugin.flatConfigs.typescript,
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
     ],
-    name: "@zphyrx/eslint-config-internal/import-x",
+    name: "@zphyrx/eslint-config-internal/import",
     files: GLOB_TS,
     rules: {
-      ...rules.importX,
+      ...rules.import,
+
+      "import/no-unresolved": "off",
     },
   },
   {
