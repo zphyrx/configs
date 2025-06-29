@@ -4,6 +4,7 @@ Each package has its own changelog.
 
 ### Configs
 
+- [`@zphyrx/eslint-config-import`](https://github.com/zphyrx/configs/blob/main/packages/configs/eslint-config-import/CHANGELOG.md)
 - [`@zphyrx/eslint-config-import-x`](https://github.com/zphyrx/configs/blob/main/packages/configs/eslint-config-import-x/CHANGELOG.md)
 - [`@zphyrx/eslint-config-jest`](https://github.com/zphyrx/configs/blob/main/packages/configs/eslint-config-jest/CHANGELOG.md)
 - [`@zphyrx/eslint-config-jsx-a11y`](https://github.com/zphyrx/configs/blob/main/packages/configs/eslint-config-jsx-a11y/CHANGELOG.md)
