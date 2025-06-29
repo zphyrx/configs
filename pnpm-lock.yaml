@@ -83,7 +83,7 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       eslint:
-        specifier: ^9.29.0
+        specifier: ^9.30.0
         version: 9.30.0(jiti@2.4.2)
       tsup:
         specifier: ^8.5.0
