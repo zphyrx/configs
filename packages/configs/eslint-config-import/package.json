@@ -1,0 +1,59 @@
+{
+  "name": "@zphyrx/eslint-config-import",
+  "version": "1.0.0",
+  "private": false,
+  "homepage": "https://zphyrx.com",
+  "bugs": {
+    "url": "https://github.com/zphyrx/configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zphyrx/configs.git"
+  },
+  "license": "MIT",
+  "author": "jcsilverx <jcsilverx@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    }
+  },
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check-types": "tsc",
+    "lint": "eslint . --max-warnings 0",
+    "clean": "rm -rf node_modules dist"
+  },
+  "dependencies": {
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/utils": "^8.35.0",
+    "@zphyrx/eslint-config-internal": "workspace:*",
+    "@zphyrx/typescript-config": "workspace:*",
+    "eslint": "^9.29.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "eslint": "^9.29.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
