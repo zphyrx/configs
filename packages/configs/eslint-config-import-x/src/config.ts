@@ -1,4 +1,4 @@
-import importXPlugin from "eslint-plugin-import-x";
+import { importX as importXPlugin } from "eslint-plugin-import-x";
 
 import { rulesImportX } from "./rules";
 
