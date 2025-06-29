@@ -8,6 +8,7 @@
 
 ### Configs
 
+- [`@zphyrx/eslint-config-import`](https://github.com/zphyrx/configs/tree/main/packages/configs/eslint-config-import)
 - [`@zphyrx/eslint-config-import-x`](https://github.com/zphyrx/configs/tree/main/packages/configs/eslint-config-import-x)
 - [`@zphyrx/eslint-config-jest`](https://github.com/zphyrx/configs/tree/main/packages/configs/eslint-config-jest)
 - [`@zphyrx/eslint-config-jsx-a11y`](https://github.com/zphyrx/configs/tree/main/packages/configs/eslint-config-jsx-a11y)
