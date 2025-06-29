@@ -1,10 +1,10 @@
-import * as exlint from "./index";
+import * as exlint from "../src/index";
 
 import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-describe("config helper", (): void => {
+describe("config method", (): void => {
   it("should work without extends", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config({
+    let config: FlatConfig.ConfigArray = exlint.config({
       files: ["**/?(*.)+(spec|test).ts?(x)"],
       ignores: ["**/__tests__/**/*.ts?(x)"],
       rules: {
@@ -24,7 +24,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config({
+    let config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -62,7 +62,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs with files and ignores", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config({
+    let config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -108,7 +108,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs with config name", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config({
+    let config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -158,7 +158,7 @@ describe("config helper", (): void => {
   });
 
   it("should flatten extended configs with names if base config is unnamed", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config({
+    let config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           name: "extension-1",
@@ -206,7 +206,7 @@ describe("config helper", (): void => {
   });
 
   it("should merge config item names", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config({
+    let config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           name: "extension-1",
@@ -257,7 +257,7 @@ describe("config helper", (): void => {
   });
 
   it("should allow nested arrays in the config function", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config(
+    let config: FlatConfig.ConfigArray = exlint.config(
       {
         rules: {
           "vitest/no-test-return-statement": "warn",
@@ -335,7 +335,7 @@ describe("config helper", (): void => {
   });
 
   it("should allow nested arrays in extends", (): void => {
-    const config: FlatConfig.ConfigArray = exlint.config({
+    let config: FlatConfig.ConfigArray = exlint.config({
       extends: [
         {
           rules: {
@@ -423,13 +423,13 @@ describe("config helper", (): void => {
   });
 
   it("throws error containing config name when some extensions are undefined", (): void => {
-    const extension: FlatConfig.Config = {
+    let extension: FlatConfig.Config = {
       rules: {
         rule1: "error",
       },
     };
 
-    const config = (): FlatConfig.ConfigArray =>
+    let config = (): FlatConfig.ConfigArray =>
       exlint.config(
         {
           extends: [extension],
@@ -452,19 +452,19 @@ describe("config helper", (): void => {
       );
 
     expect(config).toThrow(
-      'Your config at index 1, named "@zphyrx/eslint-config/vitest__2", contains undefined ' +
+      'exlint.config(): Config at index 1, named "@zphyrx/eslint-config/vitest__2", contains undefined ' +
         "extensions at the following indices: 0, 2",
     );
   });
 
   it("throws error without config name when some extensions are undefined", (): void => {
-    const extension: FlatConfig.Config = {
+    let extension: FlatConfig.Config = {
       rules: {
         rule1: "error",
       },
     };
 
-    const config = (): FlatConfig.ConfigArray =>
+    let config = (): FlatConfig.ConfigArray =>
       exlint.config(
         {
           extends: [extension],
@@ -485,8 +485,20 @@ describe("config helper", (): void => {
         },
       );
     expect(config).toThrow(
-      "Your config at index 1 (anonymous) contains undefined extensions at " +
+      "exlint.config(): Config at index 1 (anonymous) contains undefined extensions at " +
         "the following indices: 0, 2",
+    );
+  });
+
+  it("throws error when extends is not an array", () => {
+    let config = (): FlatConfig.ConfigArray =>
+      exlint.config({
+        // @ts-expect-error -- Deliberately testing with invalid values.
+        extends: 7,
+      });
+
+    expect(config).toThrow(
+      "exlint.config(): Config at index 0 (anonymous) has an 'extends' property that is NOT an array.",
     );
   });
 });

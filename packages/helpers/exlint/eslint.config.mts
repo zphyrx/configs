@@ -7,14 +7,19 @@ const config: FlatConfig.ConfigArray = [
   {
     name: "@zphyrx/eslint-config-internal",
     rules: {
+      "prefer-const": "off",
       "no-duplicate-imports": "off",
     },
   },
   {
     name: "@zphyrx/eslint-config-internal/typescritp",
     rules: {
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/restrict-template-expressions": "off",
+      "@typescript-eslint/restrict-template-expressions": [
+        "error",
+        {
+          allowNumber: true,
+        },
+      ],
     },
   },
 ];
