@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/eslint-plugin-tailwindcss": "^3.17.0",
-    "@typescript-eslint/utils": "^8.35.0",
+    "@typescript-eslint/utils": "^8.35.1",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.30.1",
