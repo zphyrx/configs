@@ -4,7 +4,7 @@ const dir = "dist/esm";
 
 const config = defineConfig({
   clean: true,
-  entry: ["src/index.ts"],
+  entry: ["src/**/*.ts"],
   outDir: dir,
   format: ["esm"],
   target: "esnext",
