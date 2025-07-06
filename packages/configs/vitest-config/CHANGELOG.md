@@ -1,5 +1,11 @@
 # @zphyrx/vitest-config
 
+## 2.0.1
+
+### Patch Changes
+
+- 25aeac7: This version bump was made to align this package with the other packages. There were no changes.
+
 ## 2.0.0
 
 ### Major Changes

@@ -1,5 +1,11 @@
 # @zphyrx/eslint-config-testing-library
 
+## 2.0.1
+
+### Patch Changes
+
+- 25aeac7: Update the tsup entry to include all `.ts` files
+
 ## 2.0.0
 
 ### Major Changes
