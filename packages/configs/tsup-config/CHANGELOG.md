@@ -1,5 +1,13 @@
 # @zphyrx/tsup-config
 
+## 2.0.1
+
+### Patch Changes
+
+- 25aeac7: This version bump was made to align this package with the other packages. There were no changes.
+- Updated dependencies [25aeac7]
+  - @zphyrx/merge-config@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
