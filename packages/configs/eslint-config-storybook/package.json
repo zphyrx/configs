@@ -37,7 +37,7 @@
     "eslint-plugin-storybook": "^9.0.16"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.36.0",
+    "@typescript-eslint/utils": "^8.37.0",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.31.0",
