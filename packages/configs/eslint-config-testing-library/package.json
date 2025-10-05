@@ -49,7 +49,7 @@
     "eslint-plugin-testing-library": "^7.11.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.39.0",
+    "@typescript-eslint/utils": "^8.45.0",
     "@zphyrx/eslint-config-internal": "workspace:*",
     "@zphyrx/typescript-config": "workspace:*",
     "eslint": "^9.32.0",
