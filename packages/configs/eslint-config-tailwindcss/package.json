@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "eslint": "^9.32.0",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.14"
   },
   "peerDependenciesMeta": {
     "eslint": {
