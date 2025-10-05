@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0"
+    "eslint-plugin-react-hooks": "^6.1.1"
   },
   "devDependencies": {
     "@types/node": "^22.18.8",
