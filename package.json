@@ -20,7 +20,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@changesets/cli": "^2.29.5",
+    "@changesets/cli": "^2.29.7",
     "@zphyrx/prettier-config": "workspace:^",
     "prettier": "^3.6.2",
     "turbo": "^2.5.5",
