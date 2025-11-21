@@ -43,8 +43,8 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@vitest/coverage-v8": "^4.0.12",
-    "vitest": "^4.0.12"
+    "@vitest/coverage-v8": "^4.0.13",
+    "vitest": "^4.0.13"
   },
   "peerDependenciesMeta": {
     "@vitest/coverage-v8": {
