@@ -6,9 +6,9 @@ import { rulesReact, rulesReactHooks } from "./rules";
 import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
 const _extends: FlatConfig.ConfigArray = [
-  reactPlugin.configs.flat.recommended as FlatConfig.Config,
-  reactPlugin.configs.flat["jsx-runtime"] as FlatConfig.Config,
-  reactHooksPlugin.configs["recommended-latest"],
+  reactPlugin.configs.flat.recommended,
+  reactPlugin.configs.flat["jsx-runtime"],
+  reactHooksPlugin.configs.flat.recommended,
 ];
 
 const _files: (string | string[])[] = ["**/*.ts?(x)", "**/*.mts"];
