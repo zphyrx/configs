@@ -46,7 +46,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "eslint-plugin-testing-library": "^7.13.4"
+    "eslint-plugin-testing-library": "^7.13.5"
   },
   "devDependencies": {
     "@typescript-eslint/utils": "^8.47.0",
