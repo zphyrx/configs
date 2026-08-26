@@ -45,7 +45,7 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "prettier": "^3.6.2"
+    "prettier": "^3.9.6"
   },
   "peerDependenciesMeta": {
     "prettier": {
