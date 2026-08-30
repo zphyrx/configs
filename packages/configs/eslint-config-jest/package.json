@@ -34,7 +34,7 @@
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^29.2.0"
+    "eslint-plugin-jest": "^29.16.6"
   },
   "devDependencies": {
     "@typescript-eslint/utils": "^8.47.0",
