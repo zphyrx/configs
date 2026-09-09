@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "eslint": "^9.39.1",
-    "vitest": "^4.0.12"
+    "vitest": "^4.1.11"
   },
   "peerDependenciesMeta": {
     "eslint": {
